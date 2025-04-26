@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maithali Photo Art Studio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Login Popup -->
+    <div class="login-popup" id="loginPopup">
+        <div class="login-content">
+            <button class="close-btn" id="closeLogin">×</button>
+            <h2>Login Required</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-text">
+                    <h1>Maithali</h1>
+                    <p>PHOTO ART STUDIO</p>
+                </div>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Get In Touch</h1>
+        <p class="contact-intro">We'd love to hear from you. Please fill out the form below to discuss your photography needs.</p>
+        
+        <form action="process_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date of Booking</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Phone: +91 9921238687</p>
+                <p>Email: vijayshinde16894@gmail.com</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Maithali Photo Art Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
