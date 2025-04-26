@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: maithali-photo-studio
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
